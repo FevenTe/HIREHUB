@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recruiter Dashboard</h1>
+      <form id="jobForm">
+        <label for="jobTitle">Job Title:</label><br />
+        <input type="text" id="jobTitle" name="jobTitle" /><br />
+        <label for="jobDescription">Job Description:</label><br />
+        <textarea id="jobDescription" name="jobDescription"></textarea><br />
+        <label for="jobLocation">Job Location:</label><br />
+        <input type="text" id="jobLocation" name="jobLocation" /><br />
+        <label for="jobType">Job Type:</label><br />
+        <select id="jobType" name="jobType">
+          <option value="fulltime">Full-time</option>
+          <option value="parttime">Part-time</option>
+          <option value="contract">Contract</option></select
+        ><br />
+        <input type="submit" value="Post Job" />
+      </form>
+    </div>
+    <div class="container">
+      <h2>Job Listings</h2>
+      <ul id="jobListings"></ul>
+    </div>
+
+    <div class="container">
+      <h2>Applications for Job</h2>
+      <ul id="jobApplications"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
